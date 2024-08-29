@@ -2,7 +2,7 @@
 
 <p> a simple ray caster made in C++ using SDL2 </p>
 
-##### Rewritten in C++ from python: https://github.com/joey121982/ray-caastor
+##### NOTE: Rewritten in C++ from python: https://github.com/joey121982/ray-caastor
 
 ## Prerequisites
 
