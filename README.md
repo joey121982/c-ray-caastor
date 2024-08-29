@@ -37,6 +37,7 @@ To build, run ```make``` inside the project root directory.
 
 ## TODO
 
+- error handling
 - add wall collisions
 - add left-right movement and separate controls for rotation
 - fix different scaling rendering issue
