@@ -5,6 +5,7 @@
 
 class Controls {
  public:
+  SDL_bool mouse_locked = SDL_TRUE;
   bool fish_eye_effect = FISH_EYE_EFFECT;
   bool shading_effect = SHADING_EFFECT;
   int shading_distance = SHADING_DISTANCE;
@@ -27,6 +28,13 @@ class Controls {
           break;
         case SDLK_PAGEDOWN:
           shading_distance -= 10;
+          break;
+        case SDLK_ESCAPE:
+          if (mouse_locked == SDL_TRUE)
+            mouse_locked = SDL_FALSE;
+          else
+            mouse_locked = SDL_TRUE;
+          SDL_SetRelativeMouseMode(mouse_locked);
           break;
       }
     }

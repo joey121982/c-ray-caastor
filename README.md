@@ -1,8 +1,6 @@
-# c-ray-caastor by [@joey12198](https://github.com/joey121982/) | version 1.0.0
+# c-ray-caastor by [@joey12198](https://github.com/joey121982/) | version 1.1
 
 <p> a simple ray caster made in C++ using SDL2 </p>
-
-###### Rewritten in C++ from python: https://github.com/joey121982/ray-caastor
 
 ## Prerequisites
 
@@ -22,14 +20,15 @@ To build, run ```make``` inside the project root directory.
 ## Features
 
 - 3D / 2D view (map mode)
-- toggleable fish eye effect
+- toggleable fish eye fix
 - toggleable shading on walls
 - changeable distance for wall shading
 
 ## Controls
 
+- ESC - toggle mouse lock
 - WASD or Arrow Keys - movement and camera rotation
-- F1 - fish-eye toggle
+- F1 - fish-eye fix toggle
 - F2 - shading toggle
 - F3 - map mode toggle
 - Page Up - Shading Distance increase
@@ -38,7 +37,5 @@ To build, run ```make``` inside the project root directory.
 ## TODO
 
 - error handling
-- add wall collisions
-- add left-right movement and separate controls for rotation
 - fix different scaling rendering issue
 - add map reader

@@ -27,9 +27,11 @@ void initialize() {
     std::cerr << "Failed to load background image: " << IMG_GetError() << std::endl;
   }
 
+  SDL_SetRelativeMouseMode(SDL_TRUE);
+
   map = Map();
-  player = Player();
   controls = Controls();
+  player = Player(&controls, &map);
   raycaster = Raycaster(&player, &map, &controls);
 }
 
